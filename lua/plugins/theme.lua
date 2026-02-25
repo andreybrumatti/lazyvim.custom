@@ -7,18 +7,18 @@ return {
       flavour = "mocha",
       color_overrides = {
         mocha = {
-          base = "#1a1a1a", -- O cinza "Min Theme" que você pediu
+          base = "#1a1a1a",
           mantle = "#161616",
           crust = "#111111",
         },
       },
       styles = {
-        comments = { "italic" },
+        comments = {},
         conditionals = { "bold" },
         loops = { "bold" },
-        functions = { "bold" },
+        functions = {},
         keywords = { "bold" },
-        strings = { "italic" },
+        strings = {},
         variables = {},
         numbers = {},
         booleans = {},
