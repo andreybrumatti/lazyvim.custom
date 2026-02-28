@@ -24,6 +24,7 @@ vim.api.nvim_set_hl(0, "@keyword.conditional.php", { link = "@function.call.php"
 vim.api.nvim_set_hl(0, "@keyword.function.php", { link = "@keyword.conditional.php" })
 vim.api.nvim_set_hl(0, "@keyword.function.tsx", { link = "@type.builtin.tsx" })
 vim.api.nvim_set_hl(0, "@keyword.exception.tsx", { link = "@constant.falsy.tsx" })
+vim.api.nvim_set_hl(0, "@keyword.exception.php", { link = "@keyword.exception.tsx" })
 vim.api.nvim_set_hl(0, "@keyword.conditional.tsx", { link = "@_jsx_attribute.tsx" })
 vim.api.nvim_set_hl(0, "@function.call.tsx", { fg = "#D4D4D4" })
 vim.api.nvim_set_hl(0, "@lsp.type.function.typescriptreact", { fg = "#D4D4D4" })
