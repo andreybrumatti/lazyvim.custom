@@ -18,6 +18,24 @@ return {
         groups.NeoTreeNormalNC = { bg = "#121212" }
       end,
     },
+    config = function(_, opts)
+      require("poimandres").setup(opts)
+
+      vim.api.nvim_create_autocmd("ColorScheme", {
+        callback = function()
+          local sel = "#34495E"
+
+          vim.api.nvim_set_hl(0, "Visual", { bg = sel, fg = "none" })
+
+          vim.api.nvim_set_hl(0, "IlluminatedWordText", { bg = sel })
+          vim.api.nvim_set_hl(0, "IlluminatedWordRead", { bg = sel })
+          vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { bg = sel })
+          vim.api.nvim_set_hl(0, "LspReferenceText", { bg = sel })
+          vim.api.nvim_set_hl(0, "LspReferenceRead", { bg = sel })
+          vim.api.nvim_set_hl(0, "LspReferenceWrite", { bg = sel })
+        end,
+      })
+    end,
   },
   {
     "LazyVim/LazyVim",
